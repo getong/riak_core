@@ -40,16 +40,16 @@ rand_seed() ->
 
 -else.
 uniform(N) ->
-    riak_core_rand:uniform(N).
+    random:uniform(N).
 
 uniform_s(N, State) ->
-    riak_core_rand:uniform_s(N, State).
+    random:uniform_s(N, State).
 
 seed() ->
-    riak_core_rand:seed().
+    random:seed().
 
 seed({A, B, C}) ->
-    riak_core_rand:seed({A, B, C}).
+    random:seed({A, B, C}).
 
 rand_seed() ->
     %% We need to do this since passing in a seed that isn't
